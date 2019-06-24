@@ -1,0 +1,102 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "55c9e629-9760-419e-b9f9-65fbeccf485c": {
+        "id": "55c9e629-9760-419e-b9f9-65fbeccf485c",
+        "parent": null,
+        "name": "IndunilSydney",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "99457f03-bde4-455b-a8a8-56d8b631356d"
+        ],
+        "isRemovable": false,
+        "filePath": "IndunilSydney"
+      },
+      "99457f03-bde4-455b-a8a8-56d8b631356d": {
+        "id": "99457f03-bde4-455b-a8a8-56d8b631356d",
+        "parent": "55c9e629-9760-419e-b9f9-65fbeccf485c",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "IndunilSydney/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigapSoutheast2Sydneyqainduany",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "55c9e629-9760-419e-b9f9-65fbeccf485c",
+    "openFiles": [
+      "99457f03-bde4-455b-a8a8-56d8b631356d"
+    ],
+    "currentFileId": "99457f03-bde4-455b-a8a8-56d8b631356d",
+    "resources": {
+      "apigapSoutheast2Sydneyqainduany": {
+        "name": "apigapSoutheast2Sydneyqainduany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "ap-southeast-2",
+          "apiMode": 0,
+          "apiName": "Sydney",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "qa/indu",
+          "resourcePath": "/qa/indu",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "Prod",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "IndunilSydney",
+    "projectDescription": "IndunilSydney",
+    "projectVersion": "1.0.0",
+    "projectRegion": "ap-southeast-2",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1561379958583
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "IndunilSydney",
+      "url": "https://github.com/Indunil1992/IndunilSydney"
+    }
+  }
+}
